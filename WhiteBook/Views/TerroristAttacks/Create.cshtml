@@ -1,0 +1,57 @@
+﻿@model WhiteBook.Models.TerroristAttack
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>TerroristAttack</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Descr" class="control-label"></label>
+                <input asp-for="Descr" class="form-control" />
+                <span asp-validation-for="Descr" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VictimsQuantity" class="control-label"></label>
+                <input asp-for="VictimsQuantity" class="form-control" />
+                <span asp-validation-for="VictimsQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InjuredQuantity" class="control-label"></label>
+                <input asp-for="InjuredQuantity" class="form-control" />
+                <span asp-validation-for="InjuredQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RadicalOrganizationId" class="control-label"></label>
+                <select asp-for="RadicalOrganizationId" class ="form-control" asp-items="ViewBag.RadicalOrganizationId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TerroristAttackTypeId" class="control-label"></label>
+                <select asp-for="TerroristAttackTypeId" class ="form-control" asp-items="ViewBag.TerroristAttackTypeId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="GermanyCityId" class="control-label"></label>
+                <select asp-for="GermanyCityId" class ="form-control" asp-items="ViewBag.GermanyCityId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

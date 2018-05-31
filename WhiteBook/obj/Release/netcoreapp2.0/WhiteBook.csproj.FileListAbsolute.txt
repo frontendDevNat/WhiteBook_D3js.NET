@@ -1,0 +1,11 @@
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\bin\Release\netcoreapp2.0\WhiteBook.deps.json
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\bin\Release\netcoreapp2.0\WhiteBook.runtimeconfig.json
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\bin\Release\netcoreapp2.0\WhiteBook.runtimeconfig.dev.json
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\bin\Release\netcoreapp2.0\WhiteBook.dll
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\bin\Release\netcoreapp2.0\WhiteBook.pdb
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\obj\Release\netcoreapp2.0\WhiteBook.csprojResolveAssemblyReference.cache
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\obj\Release\netcoreapp2.0\WhiteBook.csproj.CoreCompileInputs.cache
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\obj\Release\netcoreapp2.0\WhiteBook.AssemblyInfoInputs.cache
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\obj\Release\netcoreapp2.0\WhiteBook.AssemblyInfo.cs
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\obj\Release\netcoreapp2.0\WhiteBook.dll
+C:\MyProgram\CCharp\WhiteBook\WhiteBookB4\WhiteBook\obj\Release\netcoreapp2.0\WhiteBook.pdb

@@ -1,0 +1,63 @@
+﻿@model WhiteBook.Models.TerroristAttack
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TerroristAttack</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VictimsQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VictimsQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InjuredQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InjuredQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GermanyCity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GermanyCity.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RadicalOrganization)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RadicalOrganization.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TerroristAttackType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TerroristAttackType.Id)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

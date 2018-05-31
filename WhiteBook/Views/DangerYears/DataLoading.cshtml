@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Data loading";
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    <div class="col-md-8">
+        <p>Danger Years.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Danger</th>
+                    <th>Year</th>
+                    <th># Amount</th>
+                </tr>
+            </thead>
+            <tbody id="tagTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts {
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON("/api/DangerYears", function (data) {
+                buildVisualization(data);
+            });
+        });
+
+        function buildVisualization(dataSet) {
+            d3.select("#tagTableBody")
+                .selectAll("tr")
+                .data(dataSet)
+                .enter()
+                .append("tr")
+                .html(function (dataPoint) {                    
+                    var message = "<td>" + dataPoint.dangerName + "</td>";
+                    message += "<td>" + dataPoint.year + "</td>";
+                    message += "<td>" + dataPoint.amount + "</td>";                                        
+                    return message;
+                });
+        }
+    </script>    
+
+}
+

@@ -1,0 +1,32 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.main {
+    margin-top: 3rem;
+    height: auto;
+}
+
+.block {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background: #212529;
+    color: #fff;
+}
+
+.copyright {
+    padding: 1rem;
+    background: #16181b;
+    color: #adb5bd;
+    text-align: center;
+} 

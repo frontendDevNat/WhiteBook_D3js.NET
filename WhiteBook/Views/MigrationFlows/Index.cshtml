@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WhiteBook.Models.MigrationFlow>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descr)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateFrom)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateTill)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Amount)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Confession)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GermanyCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MigrationType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RiskyLevel)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTill)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Confession.Descr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country.Descr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GermanyCity.Descr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MigrationType.Descr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RiskyLevel.Descr)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,60 @@
+﻿@model WhiteBook.Models.TerroristAttack
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TerroristAttack</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VictimsQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VictimsQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.InjuredQuantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.InjuredQuantity)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GermanyCity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GermanyCity.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RadicalOrganization)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RadicalOrganization.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TerroristAttackType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TerroristAttackType.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
